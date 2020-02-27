@@ -1,0 +1,51 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "spiderTemple",
+          "sourceDir": "lambda"
+        },
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {}
+      },
+      "allowsPurchases": true,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Spider Temple Sample",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3534/920839c82c844b689432c642701861b8/APP_ICON?versionId=TcGUobVum.v4ztCnh3JPqgXnMWA6KEds&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200227T173328Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20200227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b2670cafbd641c013fe5889a8164b0c5c83be76739535b73628363e6e7f86abc",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/40b3/72bf14107f3f434a9ee54d39199569ed/APP_ICON_LARGE?versionId=h4vhGqatV.Wn4StLehuTXodrvjFFBsqO&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200227T173328Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20200227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cdb4ea5ce312bc54a02cb0874c9f8df83eb4a13c7447ea0d3e11a0682daa5656",
+          "summary": "This is our internal alpha test platform",
+          "description": "Thsi skill is not intended for distribution. This is a stub set up to develop workflows",
+          "examplePhrases": [
+            "Alexa, open spider temple",
+            "hello",
+            "help"
+          ],
+          "keywords": [
+            "dungeon",
+            "adventure"
+          ]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "The invocation name is spider temple",
+      "category": "GAMES",
+      "distributionCountries": []
+    }
+  }
+}

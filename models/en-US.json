@@ -1,0 +1,1146 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "spider temple",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ResetAttributesIntent",
+          "slots": [],
+          "samples": [
+            "back to zero",
+            "reset to zero",
+            "set the counter to zero",
+            "reset the counter",
+            "reset attributes",
+            "reset"
+          ]
+        },
+        {
+          "name": "StatusIntent",
+          "slots": [
+            {
+              "name": "heroSlot",
+              "type": "AMAZON.ProfessionalType"
+            },
+            {
+              "name": "nameSlot",
+              "type": "AMAZON.US_FIRST_NAME"
+            },
+            {
+              "name": "topicSlot",
+              "type": "Topictypes"
+            }
+          ],
+          "samples": [
+            "tell me about {topicSlot}",
+            "tell me the status of {topicSlot}",
+            "what is the {topicSlot} status",
+            "what is the status of the {heroSlot} {topicSlot}",
+            "tell me about the {heroSlot} {topicSlot}",
+            "what is {nameSlot} {topicSlot}",
+            "what are {nameSlot} {topicSlot}",
+            "tell me about {nameSlot} {topicSlot}",
+            "{nameSlot} {topicSlot} status",
+            "tell me the status of the {heroSlot} {topicSlot}",
+            "what is the {heroSlot} {topicSlot} status",
+            "tell me {nameSlot} {topicSlot} status",
+            "what is {nameSlot}  {topicSlot} status",
+            "what is {nameSlot}  status",
+            "tell me {nameSlot}  status",
+            "what is the status of {nameSlot}",
+            "{nameSlot} status",
+            "{heroSlot} status",
+            "what is the status of {heroSlot}",
+            "tell me the {heroSlot} status",
+            "what is the {heroSlot} status",
+            "party status",
+            "tell me the status",
+            "what is my status",
+            "what's up with my party",
+            "tell me about my party",
+            "what is the status of my party",
+            "what is my party status"
+          ]
+        },
+        {
+          "name": "ExamineRoomIntent",
+          "slots": [
+            {
+              "name": "pointOfInterestSlot",
+              "type": "PointsOfInterestypes"
+            }
+          ],
+          "samples": [
+            "check out the {pointOfInterestSlot}",
+            "look around the {pointOfInterestSlot}",
+            "examine the {pointOfInterestSlot}",
+            "inspect the {pointOfInterestSlot}",
+            "inspect the room",
+            "examine",
+            "search",
+            "look around",
+            "look around the room",
+            "search the room",
+            "examine the room"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "HelpTopicIntent",
+          "slots": [
+            {
+              "name": "helpTopicSlot",
+              "type": "Topictypes"
+            }
+          ],
+          "samples": [
+            "{helpTopicSlot} help",
+            "help with {helpTopicSlot}",
+            "help me out with {helpTopicSlot}",
+            "help for {helpTopicSlot}",
+            "i need help with {helpTopicSlot}",
+            "give me help on {helpTopicSlot}",
+            "help me with {helpTopicSlot}"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "HeroOnlyIntent",
+          "slots": [
+            {
+              "name": "heroSlot",
+              "type": "AMAZON.ProfessionalType"
+            },
+            {
+              "name": "nameSlot",
+              "type": "AMAZON.US_FIRST_NAME"
+            }
+          ],
+          "samples": [
+            "{nameSlot} please",
+            "the {heroSlot}",
+            "{heroSlot}",
+            "{nameSlot}"
+          ]
+        },
+        {
+          "name": "GoToRoomIntent",
+          "slots": [
+            {
+              "name": "roomTypeSlot",
+              "type": "Roomtypes"
+            }
+          ],
+          "samples": [
+            "{roomTypeSlot}",
+            "go {roomTypeSlot}",
+            "i want to go to the {roomTypeSlot}",
+            "take me to the {roomTypeSlot}",
+            "go to the {roomTypeSlot}"
+          ]
+        },
+        {
+          "name": "BuyThingsIntent",
+          "slots": [
+            {
+              "name": "buyableSlot",
+              "type": "Buyabletypes"
+            }
+          ],
+          "samples": [
+            "buy some {buyableSlot}",
+            "buy {buyableSlot}",
+            "get me the {buyableSlot}",
+            "purchase the {buyableSlot}",
+            "I would like the {buyableSlot}",
+            "buy that {buyableSlot}"
+          ]
+        },
+        {
+          "name": "UnlockedLevelIntent",
+          "slots": [
+            {
+              "name": "unlockedChoicesSlot",
+              "type": "Unlockedchoicestypes"
+            }
+          ],
+          "samples": [
+            "try the {unlockedChoicesSlot} level",
+            "the {unlockedChoicesSlot} level",
+            "do the {unlockedChoicesSlot} level",
+            "do the {unlockedChoicesSlot} level again"
+          ]
+        },
+        {
+          "name": "FightIntent",
+          "slots": [
+            {
+              "name": "monsterSlot",
+              "type": "Monstertypes"
+            },
+            {
+              "name": "abilitiesSlot",
+              "type": "Abilitytypes"
+            }
+          ],
+          "samples": [
+            "{abilitiesSlot} attack",
+            "{abilitiesSlot}",
+            "use {abilitiesSlot} attack",
+            "use {abilitiesSlot}",
+            "attack",
+            "fight {monsterSlot}",
+            "fight",
+            "kill the {monsterSlot}",
+            "kill {monsterSlot}",
+            "kill",
+            "fight the {monsterSlot}",
+            "fight him",
+            "engage in combat",
+            "attack the {monsterSlot}",
+            "attack him",
+            "fight the guy"
+          ]
+        },
+        {
+          "name": "TalkIntent",
+          "slots": [
+            {
+              "name": "monsterSlot",
+              "type": "Monstertypes"
+            },
+            {
+              "name": "thanksSlot",
+              "type": "Thanktypes"
+            },
+            {
+              "name": "genderSlot",
+              "type": "GenderWordtypes"
+            }
+          ],
+          "samples": [
+            "start talking to {genderSlot}",
+            "keep talking to {genderSlot}",
+            "{thanksSlot}",
+            "say hi",
+            "say hello",
+            "say hello to {monsterSlot}",
+            "hello {monsterSlot}",
+            "hi {monsterSlot}",
+            "say hi {monsterSlot}",
+            "tell me",
+            "speak to the {monsterSlot}",
+            "talk to the {monsterSlot}",
+            "speak to {genderSlot}",
+            "talk with {genderSlot}",
+            "listen",
+            "listen to {genderSlot}",
+            "speak",
+            "talk",
+            "speak with {genderSlot}",
+            "talk to {genderSlot}"
+          ]
+        },
+        {
+          "name": "SwitchWeaponIntent",
+          "slots": [
+            {
+              "name": "heroSlot",
+              "type": "AMAZON.ProfessionalType"
+            },
+            {
+              "name": "nameSlot",
+              "type": "AMAZON.US_FIRST_NAME"
+            }
+          ],
+          "samples": [
+            "change the {heroSlot} weapon",
+            "switch the {heroSlot} weapon",
+            "switch {heroSlot} weapon",
+            "change {heroSlot} weapon",
+            "switch {nameSlot} weapon",
+            "change {nameSlot} weapon",
+            "change weapon",
+            "switch weapons"
+          ]
+        },
+        {
+          "name": "SwearingIntent",
+          "slots": [],
+          "samples": [
+            "this fucking shit",
+            "fuck you",
+            "fuck this shit",
+            "fucking shit",
+            "shit",
+            "fuck this",
+            "fuck off",
+            "fuck me",
+            "fuck"
+          ]
+        },
+        {
+          "name": "BriberyIntent",
+          "slots": [
+            {
+              "name": "genderSlot",
+              "type": "GenderWordtypes"
+            },
+            {
+              "name": "monsterSlot",
+              "type": "Monstertypes"
+            }
+          ],
+          "samples": [
+            "bribe {monsterSlot} with gold",
+            "give {monsterSlot} the gold",
+            "bribe {monsterSlot}",
+            "pay {monsterSlot}",
+            "pay {genderSlot}",
+            "bribe {genderSlot} with gold",
+            "bribe {genderSlot}",
+            "give {genderSlot} the gold"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "fighting",
+                "synonyms": [
+                  "battle",
+                  "combat"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "everything"
+              }
+            },
+            {
+              "name": {
+                "value": "abilties",
+                "synonyms": [
+                  "skills"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "weapons",
+                "synonyms": [
+                  "types of weapons",
+                  "weaponry",
+                  "weapon",
+                  "melee weapons"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "armor",
+                "synonyms": [
+                  "armors"
+                ]
+              }
+            }
+          ],
+          "name": "Topictypes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "lobby"
+              }
+            },
+            {
+              "name": {
+                "value": "dungeon"
+              }
+            },
+            {
+              "name": {
+                "value": "quartermaster",
+                "synonyms": [
+                  "store"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "next room",
+                "synonyms": [
+                  "proceed",
+                  "exit",
+                  "next"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "inn",
+                "synonyms": [
+                  "start over",
+                  "tavern"
+                ]
+              }
+            }
+          ],
+          "name": "Roomtypes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "scroll"
+              }
+            },
+            {
+              "name": {
+                "value": "armor"
+              }
+            },
+            {
+              "name": {
+                "value": "potion",
+                "synonyms": [
+                  "poison vials",
+                  "vials",
+                  "poison",
+                  "holy water"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "weapon",
+                "synonyms": [
+                  "wand",
+                  "staff",
+                  "blades",
+                  "hammer",
+                  "dagger",
+                  "sword"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "level",
+                "synonyms": [
+                  "higher level",
+                  "new level",
+                  "next level"
+                ]
+              }
+            }
+          ],
+          "name": "Buyabletypes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "old",
+                "synonyms": [
+                  "existing",
+                  "same"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "new",
+                "synonyms": [
+                  "brand-new",
+                  "newest",
+                  "new and improved",
+                  "newer",
+                  "brand new",
+                  "unlocked"
+                ]
+              }
+            }
+          ],
+          "name": "Unlockedchoicestypes"
+        },
+        {
+          "values": [
+            {
+              "id": "Quartermaster",
+              "name": {
+                "value": "Quartermaster"
+              }
+            },
+            {
+              "id": "Boss",
+              "name": {
+                "value": "Boss",
+                "synonyms": [
+                  "arch bunker",
+                  "arch priest",
+                  "arch mage"
+                ]
+              }
+            },
+            {
+              "id": "Generic",
+              "name": {
+                "value": "monster"
+              }
+            },
+            {
+              "id": "NPC",
+              "name": {
+                "value": "NPC",
+                "synonyms": [
+                  "gaius",
+                  "gustav",
+                  "karl",
+                  "pete",
+                  "bobby",
+                  "jimmy",
+                  "timmy",
+                  "steve",
+                  "chuck",
+                  "willy",
+                  "billy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Gremlin",
+                "synonyms": [
+                  "gremlins"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Zombie",
+                "synonyms": [
+                  "zombies"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Kobold",
+                "synonyms": [
+                  "kobolds"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Skeleton",
+                "synonyms": [
+                  "skeletons"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Goblin",
+                "synonyms": [
+                  "goblins"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dragon"
+              }
+            },
+            {
+              "name": {
+                "value": "Giant",
+                "synonyms": [
+                  "giants"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Golem"
+              }
+            },
+            {
+              "name": {
+                "value": "Ogre",
+                "synonyms": [
+                  "ogres"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Minotaur"
+              }
+            },
+            {
+              "name": {
+                "value": "Cult Guard",
+                "synonyms": [
+                  "cult guards"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Troll",
+                "synonyms": [
+                  "trolls"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Knoll",
+                "synonyms": [
+                  "knolls"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Orc",
+                "synonyms": [
+                  "orcs"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Large Spider",
+                "synonyms": [
+                  "spider",
+                  "large spiders",
+                  "spiders"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Wolf",
+                "synonyms": [
+                  "wolves"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Rat",
+                "synonyms": [
+                  "rats"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Bat",
+                "synonyms": [
+                  "bats"
+                ]
+              }
+            }
+          ],
+          "name": "Monstertypes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "ruined statue",
+                "synonyms": [
+                  "statue"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "abandoned campsite",
+                "synonyms": [
+                  "campsite"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "burning campfire",
+                "synonyms": [
+                  "campfire"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "altar"
+              }
+            },
+            {
+              "name": {
+                "value": "large chest",
+                "synonyms": [
+                  "chest"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "mound of rubble",
+                "synonyms": [
+                  "mound",
+                  "rubble"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "corpse"
+              }
+            }
+          ],
+          "name": "PointsOfInterestypes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "thanks for that"
+              }
+            },
+            {
+              "name": {
+                "value": "great thanks"
+              }
+            },
+            {
+              "name": {
+                "value": "thank you very much"
+              }
+            },
+            {
+              "name": {
+                "value": "thanks a lot"
+              }
+            },
+            {
+              "name": {
+                "value": "thank you"
+              }
+            },
+            {
+              "name": {
+                "value": "thanks"
+              }
+            }
+          ],
+          "name": "Thanktypes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "wand",
+                "synonyms": [
+                  "magic bolt wand",
+                  "magic bolt"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "hammer",
+                "synonyms": [
+                  "mattock"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "blades",
+                "synonyms": [
+                  "blade",
+                  "basic blades"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dagger",
+                "synonyms": [
+                  "daggers",
+                  "knives",
+                  "knife"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sword",
+                "synonyms": [
+                  "broadsword",
+                  "long sword",
+                  "swords",
+                  "short sword"
+                ]
+              }
+            }
+          ],
+          "name": "Weapontypes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Leanna"
+              }
+            },
+            {
+              "name": {
+                "value": "Bauldric"
+              }
+            },
+            {
+              "name": {
+                "value": "Paul-drake"
+              }
+            },
+            {
+              "name": {
+                "value": "Broadrick"
+              }
+            },
+            {
+              "name": {
+                "value": "Deadrick"
+              }
+            },
+            {
+              "name": {
+                "value": "Beanna"
+              }
+            },
+            {
+              "name": {
+                "value": "Barvin"
+              }
+            },
+            {
+              "name": {
+                "value": "Gravin"
+              }
+            }
+          ],
+          "name": "AMAZON.US_FIRST_NAME"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "magic user",
+                "synonyms": [
+                  "mage",
+                  "mage's",
+                  "mages",
+                  "witch",
+                  "enchantress",
+                  "warlock",
+                  "necromancers",
+                  "sorcerer",
+                  "sorceress",
+                  "necromancer",
+                  "sorcerers",
+                  "magic user's",
+                  "magic users",
+                  "wizard's",
+                  "wizards",
+                  "wizard"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "thief",
+                "synonyms": [
+                  "thieves",
+                  "thief's"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "cleric",
+                "synonyms": [
+                  "clerics",
+                  "cleric's"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "warrior",
+                "synonyms": [
+                  "swordsman",
+                  "fighter's",
+                  "fighters",
+                  "warrior's",
+                  "warriors",
+                  "fighter"
+                ]
+              }
+            }
+          ],
+          "name": "AMAZON.ProfessionalType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "girl",
+                "synonyms": [
+                  "young lady",
+                  "little girl",
+                  "herself",
+                  "young woman",
+                  "young girl",
+                  "female",
+                  "woman",
+                  "the gal",
+                  "hers",
+                  "she",
+                  "her"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "boy",
+                "synonyms": [
+                  "young boy",
+                  "young man",
+                  "male",
+                  "man",
+                  "the dude",
+                  "his",
+                  "him"
+                ]
+              }
+            }
+          ],
+          "name": "GenderWordtypes"
+        },
+        {
+          "values": [
+            {
+              "id": "1",
+              "name": {
+                "value": "sense undead"
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "manipulate magical objects"
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "sense magic"
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "find treasure"
+              }
+            },
+            {
+              "id": "100",
+              "name": {
+                "value": "spinning staff"
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "find traps"
+              }
+            },
+            {
+              "id": "101",
+              "name": {
+                "value": "switch weapons"
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "read the dead"
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "feat of strength"
+              }
+            },
+            {
+              "id": "102",
+              "name": {
+                "value": "perform party heal"
+              }
+            },
+            {
+              "id": "103",
+              "name": {
+                "value": "turn undead"
+              }
+            },
+            {
+              "id": "104",
+              "name": {
+                "value": "perform lay of hands"
+              }
+            },
+            {
+              "id": "105",
+              "name": {
+                "value": "use holy water"
+              }
+            },
+            {
+              "id": "106",
+              "name": {
+                "value": "cast energy blast spell"
+              }
+            },
+            {
+              "id": "107",
+              "name": {
+                "value": "cast staff spell"
+              }
+            },
+            {
+              "id": "108",
+              "name": {
+                "value": "cast wand spell"
+              }
+            },
+            {
+              "id": "109",
+              "name": {
+                "value": "read scroll"
+              }
+            },
+            {
+              "id": "110",
+              "name": {
+                "value": "smoke screen"
+              }
+            },
+            {
+              "id": "111",
+              "name": {
+                "value": "disarm foe"
+              }
+            },
+            {
+              "id": "112",
+              "name": {
+                "value": "shadow step"
+              }
+            },
+            {
+              "id": "113",
+              "name": {
+                "value": "apply poison"
+              }
+            },
+            {
+              "id": "114",
+              "name": {
+                "value": "whirling"
+              }
+            },
+            {
+              "id": "115",
+              "name": {
+                "value": "shield bash"
+              }
+            },
+            {
+              "id": "116",
+              "name": {
+                "value": "charge"
+              }
+            },
+            {
+              "id": "117",
+              "name": {
+                "value": "taunt"
+              }
+            },
+            {
+              "id": "118",
+              "name": {
+                "value": "drink potion"
+              }
+            },
+            {
+              "id": "1000",
+              "name": {
+                "value": "two blades"
+              }
+            },
+            {
+              "id": "1001",
+              "name": {
+                "value": "arcing"
+              }
+            }
+          ],
+          "name": "Abilitytypes"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}
